@@ -12,17 +12,10 @@ public class IncrementPattern {
 		for(int i=1;i<=n;i++) {
 			for(int j=0;j<i;j++) {
 				System.out.print(sum+" ");
-				sum++;
+				sum=sum+1;
 			}
 			System.out.println();
 		}
 	}
 
 }
-/*   1
- * 	 2 2
- *   3 3 3
- *   4 4 4 4
- *   
- * 
- * */
