@@ -13,12 +13,12 @@ public class ArraySum {
 		System.out.print("Enter the value of the array: ");
 		for(int i=0;i<n;i++) {
 			arr[i]=sc.nextInt();
-		}
-		int sum =0;
+		} // 1 2 3 4 5 
+		int sum =5; //10
 		for(int i=0;i<n;i++) {
-			sum=sum+arr[i];
+			sum=sum+arr[i]; //15
 		}
-		System.out.println(sum);
+		System.out.println(sum/n);
 		
 	}
 
