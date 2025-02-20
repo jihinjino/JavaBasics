@@ -1,15 +1,15 @@
 package NestedLoop;
 
-public class NumberPattern {
+public class NestedFor {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=6;
-		for(int i=n;i>0;i--) { //6
-			for(int j=n;j>i;j--) { //6>5  6>4
-				System.out.print(i+" ");
+		for(int i=0;i<5;i++) {
+			for(int j=0;j<=i;j++) {
+				System.out.print(i);
 			}
 			System.out.println();
 		}
 	}
+
 }
