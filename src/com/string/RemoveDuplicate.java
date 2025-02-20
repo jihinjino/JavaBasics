@@ -10,7 +10,7 @@ public class RemoveDuplicate {
         
         for (int i = 0; i < s.length(); i++) {
       
-            if (ss.indexOf(s.charAt(i)) == -1) {
+            if (ss.indexOf(s.charAt(i))<0) {
                 ss = ss + s.charAt(i);  
             }
         }

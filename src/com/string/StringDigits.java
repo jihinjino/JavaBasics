@@ -11,7 +11,6 @@ public class StringDigits {
 			if(s.charAt(i)>='0'&&s.charAt(i)<='9') {
 				count++;
 			}
-			
 		}
 		if(s.length()==count) {
 			System.out.println(true);
@@ -20,5 +19,4 @@ public class StringDigits {
 			System.out.println(false);
 		}
 	}
-
 }
