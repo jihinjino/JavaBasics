@@ -13,7 +13,7 @@ public class AverageValue {
 		int b=45;
 		int c = 65;
 		
-		Average(a,b,c);
+		AverageValue.Average(a,b,c);
 	}
 
 }
