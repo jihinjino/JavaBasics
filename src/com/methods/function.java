@@ -1,36 +1,65 @@
 package com.methods;
 
 public class function {
+	public double median(int arr[]) {
+		//2,5,8,10
+		double d = 0;
+		int n = arr.length;
+		if(n%2==0) {
+			int a = n/2;
+			d = (double)(arr[a] + arr[a-1])/2;
+			
+		}
+		else 
+		{
+			int  a = (n+1)/2;
+			d = arr[a-1];
+//			return (double)arr[a-1];
+		}
+		
+		return d;
+		
+	}
+	public int[] reverse(int arr[]) {
+		int start =0;
+		int end = arr.length-1;
+		while(start<=end) {
+			int temp = arr[start];
+			arr[start] = arr[end];
+			arr[end] = temp;
+			start++;
+			end--;
+		}
+		return arr;
+	}
+	public String reverse(String s) {
+		String str ="";
+		
+		for(int i = s.length()-1; i>=0 ; i--) {
+			str+= s.charAt(i);
+		}
+		return str;
+	}
 	
-	public  static int m1() {
-		System.out.println("Welcome");
-		return 1;
+	public int add(int c,int d) {
+		return c+d;
 	}
-	public static void m1(int a) {
-		System.out.println(a);
-	}
-	public static void m1(int a,int b) {
-		System.out.println(a+b);
-	}
-	public static void m1(int a,double b) {
-		int c =a;
-		double d = b;
-		
-		System.out.println(c+d);
-	}
-	public static int m1(String a,int b) {
-		System.out.println(a+b);
-		return b;
-	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub			
-//		function s1 = new function();
-//		System.out.println(m1());
-//		m1(5);
-		m1(5,5);
-		m1(10,5.5d);
-//		m1("Hello",5);
+	
+		int a = 10;
+		int b = 20;
+		function fun = new function();
+		int c = fun.add(a,b);
+		System.out.println(c);
 		
+		String s = "hello"; //olleh
+		String str = fun.reverse(s);
+		System.out.println(str);
+		int arr[] = {2,5,8,10,15,20};
+		int rev[] = fun.reverse(arr);
+		for(int i=0;i<rev.length ; i++) {
+			System.out.print(rev[i]+" ");
+		}
 	}
-
 }
